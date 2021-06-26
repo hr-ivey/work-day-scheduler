@@ -13,25 +13,28 @@
     <link  rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
     <title>Work Day Scheduler - Get your $*^% together</title>
-  
   </head>
 
   <body>
 
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">Get your $*^% together with this simple calendar app for scheduling your work day.</p>
+      <p class="lead">Schedule your work day <i>like a boss</i> with this simple calendar app.</p>
+<!-- Calls in the current date. -->
       <p class="lead">It is currently: <span class="currentdate"></span>
     </header>
 
     <section class= "calendar">
-      
+    
     <div class="container-lg">
       <div class="row">
+ <!-- The work day hours, with an ID in order to compare against current hour. -->
         <div class="col-1 hour" id="9">
           9AM
          </div>
+<!-- Converts into input box. -->
       <input type="text" class="col textarea form-group input-group" id="userText">
+<!-- Save icon. -->
       <div class="col-1 saveBtn">
       <i class="fas fa-save fa-2x" type="submit"></i>
       </div>
@@ -109,7 +112,9 @@
       </div>
     </div>
 </div>
+
     </section>
+
     <script src="./js/script.js"></script>
     </body>
 </html>

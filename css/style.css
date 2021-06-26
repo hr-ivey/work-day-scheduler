@@ -60,15 +60,18 @@ body {
   text-align: justify;
 }
 
+/* Adds hover effect to save icon. */
 .saveBtn i:hover {
   font-size: 40px;
   transition: all 0.1s ease-in-out;
 } 
 
+/* To ensure there's some padding around the schedule itself. */
 .calendar {
   margin-top: 3em;
 }
 
+/* Assigns color to the current date at the top of the page. */
 .currentdate {
   color: #198754;
   font-weight: 900;
