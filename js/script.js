@@ -1,5 +1,4 @@
 // Assigning page elements to variables.
-var userText = document.querySelector(".textarea");
 var currentDatePage = document.querySelector(".currentdate");
 
 // Other variables.
@@ -13,17 +12,17 @@ $(".hour").each(function() {
     var colHour = $(this).attr("id") 
     console.log("Column ID/hour = ", colHour);
     console.log("Current hour = ", currentHour);
-// If the current hour is equal to the hour in column, add "present" styling.
-        if (currentHour === colHour) {
-        $( ".textarea" ).addClass("present");
-// Adds "past" conditions and styling styling.
-        } else if ((currentHour < colHour - 6) && (currentHour > colHour)) {
+// Adds "past" condition and styling.
+        if(currentHour > colHour) {
         $( ".textarea" ).addClass("past");
 // Adds "future" conditions and styling.
-} else if ((currentHour > colHour + 6) && (currentHour < colHour)) {
+        } else if
+        (currentHour < colHour)
         $( ".textarea" ).addClass("future");
+// Adds "present" condition and styling.
+        else {
+        $( ".textarea" ).addClass("present");
+        }
+        return
     }
-})
-
-// userText = $('input');
-// localStorage.setItem(userText.value)
+)
